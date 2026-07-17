@@ -1,9 +1,9 @@
-def generate_pingala_combinations(n: int, current_meter: str = "", results: list = None) -> list:
+def generate_pingala_combinations(n: int, current_meter: str = "", results: list = [None]) -> list:
     """
     Recursively generates all Pingala binary combinations (Laghu/Guru) for a given length 'n'.
     Laghu = '0', Guru = '1'.
     """
-    if results is None:
+    if results == [None]:
         results = []
         
     # Base Case: When the meter reaches the required length, add it to results
